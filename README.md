@@ -136,10 +136,6 @@ Hand Gesture Math Operations is a web-based application that allows users to per
 
    Go to the original repository on GitHub and open a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/) - The web framework used for this project.
