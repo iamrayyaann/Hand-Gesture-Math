@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand Gesture Math</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hand Gesture Math Operations</h1>
+    <form id="operation-form">
+        <label for="operation">Select Operation:</label>
+        <select id="operation" name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+        </select>
+        <button type="button" onclick="startCamera()">Start Camera</button>
+        <button type="button" onclick="captureImage('image1')">Capture First Image</button>
+        <button type="button" onclick="captureImage('image2')">Capture Second Image</button>
+        <button type="button" onclick="processImages()">Process Images</button>
+        <div id="camera"></div>
+        <div id="result"></div>
+        <div id="captured-images">
+            <h2>Captured Images</h2>
+            <img id="image1" src="" alt="First Captured Image" />
+            <img id="image2" src="" alt="Second Captured Image" />
+        </div>
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
